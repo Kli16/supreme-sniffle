@@ -29,9 +29,6 @@ def getRandWeighted(data):
             return each
 
 @my_app.route('/')
-def root():
-    return "Home";
-
 @my_app.route('/occupations')
 def occupation():
     return render_template('occupations.html', occtable = data, randelement = getRandWeighted(data))
