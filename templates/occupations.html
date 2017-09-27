@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Occupations </title>
+  </head>
+  <body>
+    <h1> OCCUPATIONS </h1>
+    <h3> The table below shows some occupationz </h3>
+    <table>
+      <tr>
+        <th> Job </th>
+        <th> Percentage Composition in US Workforce </th>
+      </tr>
+      {% for i in occtable %}
+      <tr>
+        <td> {{i}} </td>
+        <td> {{occtable[i]}} </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <hr>
+    <p> a randomly selected occupation for you: {{randelement}} </p>
+  </body>
+</html>
